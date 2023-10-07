@@ -1,3 +1,94 @@
+@font-face {
+    font-family: "Jumper";
+    src: url('../fonts/Jumper.ttf');
+  }
+
 .header-menu{
+    margin-top: 30px;
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    font-family: 'Jumper';
     
+}
+
+.header-menu button{
+    font-family: "Jumper",bold;
+    font-size: 80%;
+
+    padding: 10px 20px; 
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.botones-menu{
+    display: flex;
+    margin-left: 38%;
+    gap: 35px;  
+    position: fixed;
+    align-items: center;
+    
+
+    
+}
+
+.icons-menu {
+    font-size: 160%;
+    display:inline-flex;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    
+}
+
+.btn-links{
+    border-radius: 8px;
+    border-width: 0;
+    color: #8E44AD;
+    background: rgb(236, 236, 236);
+}
+
+.btn-links.active{
+    border-radius: 8px;
+    border-width: 0;
+    color: rgb(77, 77, 77);
+    background: transparent;
+}
+
+.btn-profile{
+    border-radius: 8px;
+    border-width: 0;
+    color: rgb(77, 77, 77);
+    background: transparent;
+    
+}
+
+.btn-profile.active{
+    border-radius: 8px;
+    border-width: 0;
+    color: #8E44AD;
+    background: rgb(236, 236, 236);
+}
+
+.btn-preview{
+    display: flex;
+    margin-left: 400px;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #8E44AD;
+    background:transparent;
+    color: #8E44AD;
+}
+
+.btn-preview.active{
+    display: flex;
+    margin-left: 400px;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: transparent;
+    background:#8E44AD;
+    color: #ffffff;
 }
