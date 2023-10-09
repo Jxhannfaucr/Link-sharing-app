@@ -3,14 +3,24 @@
     src: url('../fonts/Jumper.ttf');
   }
 
+
+.main {
+    background-color: #ededed;
+}
+
 .header-menu{
     margin-top: 30px;
     display: flex;
-    margin-left: 30px;
-    align-items: center;
     font-family: 'Jumper';
-    
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    border-radius: 5px;
 }
+
+.logo-Sharing {
+    margin-left: 30px;
+}
+
 
 .header-menu button{
     font-family: "Jumper",bold;
@@ -29,15 +39,14 @@
     margin-left: 38%;
     gap: 35px;  
     position: fixed;
-    align-items: center;
+    justify-content: flex-end;
     
-
     
 }
 
 .icons-menu {
     font-size: 160%;
-    display:inline-flex;
+    display:inline-block;
     vertical-align: middle;
     margin-right: 5px;
     margin-bottom: 2px;
@@ -45,6 +54,7 @@
 }
 
 .btn-links{
+    display:inline-block;
     border-radius: 8px;
     border-width: 0;
     color: #8E44AD;
@@ -59,6 +69,7 @@
 }
 
 .btn-profile{
+    display:inline-block;
     border-radius: 8px;
     border-width: 0;
     color: rgb(77, 77, 77);
@@ -74,14 +85,16 @@
 }
 
 .btn-preview{
-    display: flex;
-    margin-left: 400px;
+    display:inline-block;
     border-radius: 8px;
     border-width: 2px;
     border-color: #8E44AD;
     background:transparent;
     color: #8E44AD;
+    position: fixed;
+    right: 20px;
 }
+
 
 .btn-preview.active{
     display: flex;
@@ -91,4 +104,61 @@
     border-color: transparent;
     background:#8E44AD;
     color: #ffffff;
+}
+
+.div-preview-celular {
+    background-color: #ffffff; 
+    display: inline-block;
+
+    padding-top: 30px;
+    padding-bottom: 18px;
+    padding-left: 180px;
+    padding-right: 340px;
+
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+    border-radius: 20px;
+}
+
+.iphone {
+     width: 185%;
+}
+
+/* .ftProfile {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+
+    margin-right: 50px;
+    margin-bottom: -50px;
+    padding-top: -70px;
+    
+} */
+
+
+@media only screen and (max-width: 600px) {
+    .logo-Sharing{
+        align-content: center;
+    }
+
+    .header-menu {
+        margin-left: 10px;
+        flex-direction: column;
+    }
+
+    .botones-menu{
+        gap: 2px;
+        margin-top: 70px;
+        flex-direction:row;
+        left: -130px;  
+        align-items: flex-end;
+    }
+
+    .btn-preview {
+        right: 3px;
+    }
 }
